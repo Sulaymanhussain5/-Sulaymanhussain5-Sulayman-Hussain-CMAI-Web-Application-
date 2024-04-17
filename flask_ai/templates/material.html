@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Prediction</title>
+</head>
+<body>
+    <h1>Clothing Prediction</h1> <!--Using heading level of 1 (<h1>) to give heading in the page tag-->
+    <form action="/predict" method="POST" enctype="multipart/form-data"> <!--Using form (<form>) tag to add a form that will be sent to the flask application with the action attribute of "/predict" which locates the page to "/predict" endpoint in flask app, using method attribute "POST" to post the form to the flask app and entype attribute of "multipart/form-data" to encode the file to flask app -->
+        <input type="file" name="file" accept="image/*" required> <!--Using image (<img>) tag to input the files (image) and by using accept attribute, it is only accepting image files-->
+        <button type="submit">Predict</button> <!--Using the form (<button>) tag to predict the file (submit the file) to the flask application-->
+    </form> <!--Closing the form  tag (</form>) -->
+    {% if prediction_result %}  <!--Checking if the variable "prediction_result" in the flask application -->
+        <h2>Prediction: {{ prediction_result }}</h2> <!--It will print the prediction result in the html page if the prediction_result exists-->
+    {% endif %} <!--Ends the if condition-->
+</body>
+</html>

@@ -1,0 +1,12 @@
+GET http://localhost:8000/signup
+
+Content-Type: application/json
+
+{
+    "userName": "sulaymanhussain1902",
+    "email": "sulaymanhussain5@gmail.com",
+    "password": "Romanempire3."
+}
+
+
+POST http://localhost:8000/user

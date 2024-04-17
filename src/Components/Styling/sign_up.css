@@ -1,0 +1,46 @@
+.sign-up-container h1{ /*Styling the classname div (sign-up-container) h1 tag*/
+    color: #3d3838; /*Adding the heading colour of grey*/
+}
+
+.sign-up-container{ /*Styling the classname div (sign-up-container)*/
+    position: relative; /*By using position type of relative, i have freedom in locating the elements to any position and any pixes */
+    top: -1cm; /*Moving all elements in sign-up-container to the top by -1cm pixels (moves the elements top) */
+    width: 300px; /*Adding the width size of login container to 300 pixels*/
+    box-shadow: 0 0 3px 0; /*I am setting the box shadow of 0 (horrizontal), 0(verticall), 3 pixels (blur radius) and 0 (spread radius) */
+    padding: 20px; /*By setting the padding to 20 pixels, i am setting my elements in the sign-up-comtainer on all sides of left, right, up and down by 20 pixels of padding*/
+    margin: 8% auto 0; /*Sets the elements by top margin of 8%, sets all elementsd by left and right of auto and sets all elements by bottom by 0*/
+    text-align: center; /*It alligns the text by center */
+    color: black; /*Adds the text colour by black */
+}
+
+.sign-up-container label{ /*Styling the classname div (sign-up-container) label tag*/
+    display: grid; /*It displays the container to grid, which means elements are laid out in grid layout*/
+    font-size: 18px; /*It adds the font size to 18 pixels */
+    font-weight: bold; /*It adds bold in all text*/
+    color: black; /*Adding the text colour of black*/
+    margin: 10px; /*Adds the spacing between the elements to 10 pixels*/
+}
+
+.sign-up-container input{ /*Styling the classname div (sign-up-container) input tag*/
+    width: 100%; /*By using 100% width, the input width size will fit in the parent container  */
+    border: none; /*Removes the border*/
+    border: 1px solid blue; /*Adds a new border of 1 pixels solid type border and colour blue*/
+    border-radius: 6px;/*Adds the size of the border radius of 6 pixels*/
+    outline: none; /*Removes the outline*/
+    font-size: 20px; /*Adds the font size of the input tag to 20 pixels*/
+}
+
+.sign-up-detail-box button{ /*Styling the button tag in the "sign-up-details" div */
+    border: none;/*Removes the border*/
+    background-color: black; /*Adds the background colour of black in button*/
+    outline: none; /*Removes the outline*/
+    border: 1px solid white; /*Adds a new border of 1 pixels solid type border and colour white*/
+    border-radius: 20px; /*Adds the size of the border radius of 20 pixels*/
+    color: white; /*Adds the text colour in the button of white*/
+    font-size: 25px; /*Adds the font size of the button tag to 25 pixels*/
+    cursor: pointer; /*When the cursor lands in the button it will become pointer cursor */
+}
+
+.sign-up-container button:hover{ /*By using :hover i am styling the sign-up-container button tag when the mouse pointer lands on the button */
+    color: yellow; /*Adding the text colour yellow when the pointer lands on the button */
+}

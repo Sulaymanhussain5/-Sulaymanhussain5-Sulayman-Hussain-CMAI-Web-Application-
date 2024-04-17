@@ -1,0 +1,60 @@
+.top-nav{ /*Styles the classname div (top-nav) (top navigation box)*/
+    background-color: yellow; /*Adds the background colour of black in footer*/
+    padding-left: 15px; /*By using padding-left, i am creating a space to the left by 15 pixels*/
+    padding-right: 15px; /*By using padding-left, i am creating a space to the right by 15 pixels*/
+    display: flex; /*By using display type flex, i can add elements in the footer vertically or horrizontally */
+    align-items: center; /*It alligns all elements in the center vertically */
+    justify-content: space-between; /*It spaces between the elements horrizontally  */
+}
+
+
+
+.links{ /*Styling the classname div (links)*/
+    list-style: none;  /*By using the list-style type of none, i am not listing the elements  */
+    display: inline-block; /*By using the display type of inline-block, i am placing the text links inline of the elements */
+    text-decoration: none; /*By using text-decoration type of none, removes the underline of the link*/
+    color: black; /*Adds the text colour black */
+    font-size: 18px; /*Adds the font size of 18 pixels */
+    font-weight: bold; /*Adds bold text in the label tag*/
+    margin-right: 25px; /*By setting the margin-right to 25 pixels, i am adding space between the edge by 25 pixels */
+}
+
+.links:hover{ /*By using :hover i am styling the links, when the mouse pointer lands on the links */
+    background-color: black; /*Adding the background colour black when the pointer lands on the links */
+    color: white; /*Adding the text colour white when the pointer lands on the links */
+}
+
+.top-nav button{ /*Styling the classname div (top-nav) button tag (Sign up button)*/
+    border: none; /*Removes the border*/
+    background-color: black; /*Adds the background colour of black in button*/
+    outline: none; /*Removes the outline*/
+    border: 1px solid white; /*Adds a new border of 1 pixels solid type border and colour white*/
+    color: white; /*Adds the text colour in the button of white*/
+    font-size: 25px; /*Adds the font size of the button tag to 25 pixels*/
+    cursor: pointer; /*When the cursor lands in the button it will become pointer cursor */
+}
+
+.top-nav button:hover{ /*By using :hover i am styling the top-nav button tag when the mouse pointer lands on the sign up button */
+    color: yellow; /*Adding the text colour yellow when the pointer lands on the button */
+}
+
+
+@media only screen and (max-width: 1024px){ /*By using @media only screen, i am making the info row box responsive*/
+    header .btn{ /*Styling the  header tag, in the btn class (sign up button) */
+        visibility: visible; /*Displays the btn page when the browser size changes*/
+        opacity: 1; /*By setting the opacity by 1, i am not making the sign up button not transparant*/
+    }
+
+    header .top-nav{ /*Styling the  header tag, in the top-nav classname */
+        position: relative; /*By using position type of relative, i have freedom in locating the elements to any position and any pixes */
+        top: 0; /*Not moving the top navigation box when the browser size change*/
+        left: 0; /*Not moving the left navigation box when the browser size change*/
+        width: 100%; /*By using 100% width, it will fit the parent container */
+        display: flex; /*By using display type flex, i can add elements in the footer vertically or horrizontally */
+        flex-direction: row;
+        align-items: left; /*It alligns all elements in the left horrizontally */
+        justify-content: left; /*It alligns all elements in the left vertically */
+        gap: 1.5rem; /*It leaves the gap of elements by 1.5rem  */
+        background-color: yellow; /*Adds the background colour of yellow in yellow*/
+    }
+}

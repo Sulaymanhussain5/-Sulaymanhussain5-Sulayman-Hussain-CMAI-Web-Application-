@@ -1,0 +1,16 @@
+.link-container h1,b{ /*The classname div (link-container) which styles the h1 tag*/
+    font-family: "Tauri", sans-serif;  /*Adding font style of "Tauri San Serif". Founded this font in Google font*/
+    color: #3d3838; /*Colour of the h1 text grey*/
+}
+
+.link-container p{  /*The classname div (link-container) which styles the p tag*/
+    font-family: "Hedvig Letters Sans", sans-serif;  /*Adding font style of "Hedvig Letters sans, sans-serif" */
+}
+
+@media only screen and (max-width: 1024px){  /*By using @media only screen, i am making the heading and text responsive*/
+    .link-container h1, p,b{  /*Adding the h1 and p tag in the div container "link-container" to change the height and width when the browser size chnaged*/
+        height: auto;  /*Changes the heigth automatically when browser size changes*/
+        width: auto; /*Changes the Width automatically when browser size changes*/
+    }
+    
+}

@@ -1,0 +1,50 @@
+footer { /*Styles the footer tag*/
+    width: 100%; /*By using 100% width, it will fit the parent container */
+    background-color: black; /*Adds the background colour of black in footer*/
+    margin-top: auto; /*It pushes the footer elements to the availabe vertical space in the website*/
+    right: 0; /*It does not position the footer tag to the right*/
+    bottom: 0; /*It does not position the footer tag to the bottom*/
+    left: 0; /*It does not position the footer tag to the left*/
+}
+
+
+.footer-container { /*Styles the classname div (footer-container) */
+    display: flex; /*By using display type flex, i can add elements in the footer vertically or horrizontally */
+    justify-content: center; /*It alligns all elements in the center horrizontally */
+    align-items: center; /*It alligns all elements in the center vertically */
+    gap: 20px; /*It leaves the gap of elements by 20 pixels */
+}
+
+
+
+.footer-container h3 { /*Styles the classname div (footer-container) h3 tag */
+    color: white; /*Adds the heading colour of white */
+    font-size: 25px; /*Adds the font size of heading by 25 pixels */
+}
+
+
+
+.ending{ /*Styles the classname div (ending), where @copyright appears */
+    display: flex; /*By using display type flex, i can add elements in the footer vertically or horrizontally */
+    justify-content: center;  /*It alligns all elements in the center horrizontally */
+    align-items: center;  /*It alligns all elements in the center vertically */
+    background-color: grey;  /*Adds the background colour of grey */
+    color: black;  /*Adds the text colour black */
+}
+
+
+.quick-links-container{ /*Styles the classname div (quick-links-container) */
+    position: relative; /*By using position type of relative, i have freedom in locating the elements to any position and any pixes */
+    top: -10px; /*Moving all elements in quick-links-container to the top by -10 pixels (moves the elements top) */
+}
+
+.quick-links-container li{ /*Styles the classname div (quick-links-container) li tag */
+    list-style: none; /*By using the list-style type of none, i am not listing the elements  */
+    text-decoration: underline; /*Setting all text underlined */
+    color: white; /*Adding the text colour white*/
+}
+
+.quick-links-container li:hover{ /*By using :hover i am styling the quick-links-container li tag when the mouse pointer lands on the lists */
+    color: yellow; /*Adding the text colour yellow when the pointer lands on the lists */
+}
+

@@ -1,0 +1,67 @@
+.info-container{ /*Styling the classname div (info-container) */
+    display: grid; /*It displays the container to grid, which means elements are laid out in grid layout*/
+    grid-template-columns: auto auto; /*By setting the grid-template-columns auto auto, this means that it lays out the elements in coloumns automatically */
+    gap: 5px; /*It leaves the gap of elements by 5 pixels */
+    justify-content: space-between; /*It spaces between the elements horrizontally  */
+}
+
+.info-container h3{ /*Styling the classname div (info-container) in h3 tag */
+    font-family: "Tauri", sans-serif; /*Adding font style of heading "Tauri, sans-serif" */
+    color: #3d3838; /*Adding heading colour of grey */
+}
+
+.info-container p{ /*Styling the classname div (info-container) in p tag */
+    font-family: "Hedvig Letters Sans", sans-serif; /*Adding font style of text "Hedvig Letters sans, sans-serif" */
+}
+
+.info-row{ /*Styling the classname div (info-row)  */
+    width: fit-content; /*Width changes when contents are added*/
+    height: fit-content; /*height changes when contents are added*/
+    background-color: yellow; /*Adds the background colour of info row "yellow"*/
+    color: black; /*Adds the text colour black*/
+    border: 1px solid black; /*Adds a new border of 1 pixels solid type border and colour black*/
+    box-shadow: 2px 2px; /*By using the box-shadow, i am setting the vertical shadow of 2 pixes and horrizontal shadow of 2 pixels*/
+    padding: 10px 5px; /*By using padding, i am moving the elements by top and bottom of 10 pixels and left and right by 5 pixels*/
+    border-radius: 15px; /*Adds the size of the border radius of 15 pixels*/
+}
+
+.info-row p{ /*Styling the classname div (info-row) in p tag  */
+    word-wrap: break-word;  /*By using word-wrap type of break-word, it will prevent the text overflowing and go to new line when writing the long text */
+}
+
+@media only screen and (max-width: 1024px){ /*By using @media only screen, i am making the info row box responsive*/
+    .info-row{ /*Adding  div container "info-row" to change the height when the browser size chnaged*/
+        height: auto; /*Changes the heigth automatically when browser size changes*/
+    }
+    .info-row p{ /*Adding  div container "info-row" p tag to align the element center vertically*/
+        align-items: center; /*It alligns all elements in the center vertically */
+    }
+}
+
+.about-us-container{ /*Styling the classname div (about-us-container)*/
+    background-color: aqua; /*Adding the background colour of aqua blue in about us box*/
+    color: black; /*Adding the text colour of black*/
+    border-radius: 10px; /*Adds the size of the border radius of 10 pixels*/
+    border: solid; /*Adds the border type of solid*/
+}
+
+.about-us-container p{ /*Styling the classname div (about-us-container) p tag*/
+    font-family: "Hedvig Letters Sans", sans-serif; /*Adding font style of text "Hedvig Letters sans, sans-serif" */
+    word-wrap: break-word; /*By using word-wrap type of break-word, it will prevent the text overflowing and go to new line when writing the long text */
+}
+
+.about-us-container h3{ /*Styling the classname div (about-us-container) h3 tag*/
+    font-family: "Tauri", sans-serif; /*Adding font style of heading "Tauri, sans-serif" */
+    color:#3d3838; /*Adding the colour of heading grey */
+}
+
+
+.home-container .banner{ /*In home-container (div classname) i am styling banner (img classname) */
+    width: 100%; /*By using 100% width, the image width size will fit in the parent container  */
+}
+
+
+
+
+
+
